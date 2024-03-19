@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather apps</title>
+    <!------
+        primary meta tags
+    ------>
+
+    <meta name="author" content="Arthur Boyle">
+    <meta name="description" content="Weather apps design by arthur">
+    <!-----
+        link css and import boxicon
+    ------>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+
+</head>
+<body>
+
+    <section class="weather-board">
+        <div class="weather-container">
+            <div class="weather-input">
+                <input type="text" placeholder="City name..." class="weather-input-field" data-input="city">
+                <div class="weather-icon" data-search="search">
+                    <box-icon name='search' class="search"></box-icon >
+                </div>
+            </div>
+            <div class="weather-report">
+                <div class="weather-top">
+                    <img src="images/clouds.png" alt="weather image" class="weather-image" data-weather-image>
+                    <h2 class="weather-top-title" data-weather-report>28°C</h2>
+                    <p class="weather-top-text" data-weather-name>
+                        Scattered Clouds
+                    </p>
+                </div>
+                <div class="weather-bottom">
+                    <div class="humid-report">
+                        <div class="humid-image">
+                            <img src="images/humidity.png" alt="" class="weather-humid">
+                        </div>
+                        <div class="humid-text">
+                            <p class="humid-percent percent" data-humid-percent>50%</p>
+                            <p class="title">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="wind-report">
+                        <div class="wind-image">
+                            <img src="images/wind.png" alt="" class="weather-wind">
+                        </div>
+                        <div class="wind-text">
+                            <p class="wind-percent percent" data-wind-percent >50%</p>
+                            <p class="title">Wind speed</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <!------
+        link script.jsS
+    ------->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
